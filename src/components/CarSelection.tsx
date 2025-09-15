@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { CARS_DATA, IMAGES } from "@/constants";
+import { CARS_DATA } from "@/constants";
 import Image from "next/image";
 
 export default function CarSelection() {
