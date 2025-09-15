@@ -70,34 +70,39 @@ export default function Hero() {
           >
             <motion.div
               transition={{ type: "spring", stiffness: 300 }}
-              className=" rounded-2xl p-8 "
+              className="rounded-2xl p-8 relative"
             >
+              {/* Map Background - appears first but stays behind */}
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.6 }}
-                className="w-full h-80 mt-10 rounded-lg z-10 flex items-center justify-center mb-4"
+                transition={{ delay: 0.6, duration: 0.6 }}
+                className="absolute inset-0 w-full h-full rounded-lg flex items-center justify-center"
+                style={{ zIndex: 1 }}
+              >
+                <Image
+                  src={IMAGES.hero.map}
+                  alt="Hero Map"
+                  width={500}
+                  height={500}
+                  className="w-full h-full"
+                />
+              </motion.div>
+              
+              {/* Car Foreground - appears after map */}
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.8, duration: 0.6 }}
+                className="relative w-full h-80 mt-10 rounded-lg flex items-center justify-center mb-4"
+                style={{ zIndex: 2 }}
               >
                 <Image
                   src={IMAGES.hero.car}
                   alt="Hero Car"
                   width={1000}
                   height={1000}
-                  className="z-10 mt-24"
-                />
-              </motion.div>
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.8, duration: 0.6 }}
-                className="w-full absolute h-full top-0 z-0 rounded-lg flex items-center justify-center"
-              >
-                <Image
-                  src={IMAGES.hero.map}
-                  alt="Hero Car"
-                  width={500}
-                  height={500}
-                  className="w-full h-full "
+                  className="mt-24 relative"
                 />
               </motion.div>
             </motion.div>
