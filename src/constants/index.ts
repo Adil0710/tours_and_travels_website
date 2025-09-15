@@ -2,7 +2,8 @@
 export const SITE_CONFIG = {
   name: "RENT",
   title: "Tours & Travels - Car Rental Services",
-  description: "Professional car rental and travel services. Book your perfect car for your next trip with us.",
+  description:
+    "Professional car rental and travel services. Book your perfect car for your next trip with us.",
 };
 
 // Navigation Links
@@ -17,7 +18,8 @@ export const NAV_LINKS = [
 export const HERO_DATA = {
   title: "We Have Prepared a Car For",
   titleHighlight: " Your Trip",
-  description: "Explore the world with our reliable and comfortable vehicles. Perfect for your next adventure.",
+  description:
+    "Explore the world with our reliable and comfortable vehicles. Perfect for your next adventure.",
   buttons: {
     primary: "Get Started",
     secondary: "Learn More",
@@ -99,19 +101,19 @@ export const CONTACT_INFO = [
     id: 1,
     icon: "📍",
     title: "Address",
-    info: "123 Main Street, City, State 12345",
+    info: "57/1 Ambika Nagar, Bale, Solapur",
   },
   {
     id: 2,
     icon: "📞",
     title: "Phone",
-    info: "+1 (555) 123-4567",
+    info: "9172356660",
   },
   {
     id: 3,
     icon: "✉️",
     title: "Email",
-    info: "info@toursandtravels.com",
+    info: "trimurtitravelssolapur@gmail.com",
   },
 ];
 
