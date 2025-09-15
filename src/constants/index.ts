@@ -28,22 +28,22 @@ export const HERO_DATA = {
 export const CARS_DATA = [
   {
     id: 1,
-    name: "Toyota Camry",
-    type: "Sedan",
+    name: "16 Seater Traveller",
+    type: "Tempo Traveller",
     price: "$45",
     image: "/16.png", // You can replace with actual image paths
   },
   {
     id: 2,
-    name: "Honda CR-V",
-    type: "SUV",
+    name: "18 Seater Traveller",
+    type: "Tempo Traveller",
     price: "$55",
     image: "/18.png",
   },
   {
     id: 3,
-    name: "BMW 3 Series",
-    type: "Luxury",
+    name: "Innova Crysta",
+    type: "MPV",
     price: "$75",
     image: "/innova.png",
   },
